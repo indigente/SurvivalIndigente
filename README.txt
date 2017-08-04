@@ -1,4 +1,1 @@
-Esse é o jogo do indigente (grupo de desenvolvimento de jogos da bahia).
-Survival Game 
-
-Coordenador Rodrigo 
+Este é um jogo do Indigente (grupo de pesquisa e desenvolvimento de jogos da Universidade Federal da Bahia).
