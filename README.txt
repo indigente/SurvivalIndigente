@@ -1,5 +1,3 @@
-Esse é o jogo do indigente (grupo de desenvolvimento de jogos da bahia).
-Survival Game 
+Este é um jogo do Indigente (grupo de pesquisa e desenvolvimento de jogos da Universidade Federal da Bahia).
 
-Coordenador Rodrigo 
 Curso de Git com Raphael 04/08
