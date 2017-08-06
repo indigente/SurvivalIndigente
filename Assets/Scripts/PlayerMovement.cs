@@ -19,4 +19,13 @@ public class PlayerMovement : MonoBehaviour {
         rigid.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
 		
 	}
+
+	void OnTriggerEnter2D(Collider2D coletavel) 
+	{
+		
+		if (coletavel.gameObject.CompareTag("Coletavel"))
+		{
+			coletavel.gameObject.SetActive(false);
+		}
+}
 }
