@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour {
 		
 		if (coletavel.gameObject.CompareTag("Coletavel"))
 		{
-			coletavel.gameObject.SetActive(false);
+			Destroy (coletavel.gameObject);
 		}
 }
 }
