@@ -27,6 +27,19 @@ public class PlayerHealth : MonoBehaviour {
 		if (health <= 0) {
 			Destroy (this.gameObject);
 		}
+	}
 
+
+	//void OnCollisionStay2D(Collision2D enemy){
+	//	if (enemy.gameObject.tag == "Enemy") {
+	//		health -= dmgAmountTest;
+	//		print ("acertou");
+	//	}
+
+		void OnCollisionEnter2D(Collision2D enemy){
+			if (enemy.gameObject.tag == "Enemy") {
+				health -= dmgAmountTest;
+				print ("acertou");
+			}
 	}
 }
