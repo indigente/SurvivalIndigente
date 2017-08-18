@@ -7,6 +7,7 @@ public class PlayerAttack : MonoBehaviour {
 	public GameObject theSword;
 	public float timer, timerAux, cd, cdAux;
 	public bool isAttacking;
+    public PlayerMovement myScriptMove;
 
 	// Use this for initialization
 	void Start () {
@@ -20,9 +21,12 @@ public class PlayerAttack : MonoBehaviour {
 			theSword.SetActive (false);
 		}
 
-		if(Input.GetKeyDown(KeyCode.K) && cd == 0){
+		if(Input.GetKeyDown(KeyCode.K) && cd == 0)
+        {
 			isAttacking = true;
 			theSword.SetActive (true);
+            print(myScriptMove.playerDirection);
+            theSword.transform.localPosition = myScriptMove.playerDirection;
 		}
 
 		if (isAttacking) {
@@ -38,4 +42,5 @@ public class PlayerAttack : MonoBehaviour {
 			cd = 0;
 		}
 	}
+
 }
