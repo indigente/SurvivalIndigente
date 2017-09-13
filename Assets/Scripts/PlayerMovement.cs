@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
+
+	public AudioSource collectibleSound;
     
     public float speed; //Velocidade do player
 
@@ -10,7 +12,8 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Start () {
 
-        rigid = gameObject.GetComponent<Rigidbody2D>(); 
+        rigid = gameObject.GetComponent<Rigidbody2D>();
+		collectibleSound = GetComponent<AudioSource> ();
 
 	}
 	
@@ -26,6 +29,7 @@ public class PlayerMovement : MonoBehaviour {
 		if (coletavel.gameObject.CompareTag("Coletavel"))
 		{
 			Destroy (coletavel.gameObject);
+			collectibleSound.Play ();
 		}
 }
 }

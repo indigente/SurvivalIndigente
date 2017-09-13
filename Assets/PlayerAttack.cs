@@ -25,8 +25,8 @@ public class PlayerAttack : MonoBehaviour {
         {
 			isAttacking = true;
 			theSword.SetActive (true);
-            print(myScriptMove.playerDirection);
-            theSword.transform.localPosition = myScriptMove.playerDirection;
+           // print(myScriptMove.playerDirection);
+           // theSword.transform.localPosition = myScriptMove.playerDirection;
 		}
 
 		if (isAttacking) {
